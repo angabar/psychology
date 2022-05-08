@@ -124,7 +124,7 @@ body {
 .contact {
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 80px;
 }
 
 .contact-content {
@@ -177,6 +177,7 @@ body {
 
 @media (max-width: 800px) {
     .intro-section {
+        height: 450px;
         flex-direction: column;
     }
 
@@ -202,5 +203,13 @@ body {
 
     .service-card-container:last-of-type {
         margin-top: 40px;
+    }
+
+    .contact {
+        padding: 40px;
+    }
+
+    .footer {
+        padding: 60px;
     }
 }
