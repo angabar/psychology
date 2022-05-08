@@ -81,7 +81,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: rgb(241, 241, 241);
-    padding: 40px;
+    padding: 80px;
 }
 
 .section-title {
@@ -189,6 +189,10 @@ body {
         margin-left: 0px;
         margin-top: 40px;
         width: 150px;
+    }
+
+    .service {
+        padding: 40px;
     }
 
     .services-row {
