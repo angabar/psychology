@@ -6,6 +6,7 @@
 :root {
     --font-faimly: "Modica";
     --primary: #afcbe9;
+    --primary-dark: #97b7da;
     --white: #ffffff;
     --dark: #000;
     --dark-1: rgb(29, 29, 29);
@@ -62,22 +63,32 @@ body {
 }
 
 .who-are-we {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
     height: 500px;
+}
+
+.who-are-we-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
 }
 
 .services {
     display: flex;
     flex-direction: column;
-    height: 500px;
     background-color: rgb(241, 241, 241);
+    padding: 40px;
 }
 
 .section-title {
-    padding: 20px;
     text-align: center;
     font-size: 24px;
-    margin-top: 30px;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .services-row {
@@ -113,14 +124,15 @@ body {
 .contact {
     display: flex;
     flex-direction: column;
-    height: 400px;
+    padding: 40px;
 }
 
 .contact-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 30px;
+    padding: 0px 40px;
+    text-align: center;
 }
 
 .contant-send-email-button {
@@ -130,13 +142,65 @@ body {
     border-radius: 4px;
     margin-top: 30px;
     background-color: var(--primary);
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.contant-send-email-button:hover {
+    background-color: var(--primary-dark);
 }
 
 .footer {
     background-color: var(--dark-1);
     color: var(--white);
-    height: 200px;
-    padding: 40px;
+    height: 250px;
+    padding: 80px;
     display: flex;
     align-items: center;
+}
+
+.footer-container > div {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer-container img {
+    width: 20px;
+    margin-right: 12px;
+    filter: invert(1);
+}
+
+.footer-container > div:first-of-type {
+    margin-top: 0px;
+}
+
+@media (max-width: 800px) {
+    .intro-section {
+        flex-direction: column;
+    }
+
+    .intro-text-details {
+        text-align: center;
+    }
+
+    .intro-section img {
+        margin-left: 0px;
+        margin-top: 40px;
+        width: 150px;
+    }
+
+    .services-row {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .service-card-container {
+        width: 90%;
+    }
+
+    .service-card-container:last-of-type {
+        margin-top: 40px;
+    }
 }
