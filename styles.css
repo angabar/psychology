@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "Modica";
+    src: url("./modica-regular.otf");
+}
+
+:root {
+    --font-faimly: "Modica";
+    --primary: #afcbe9;
+    --white: #ffffff;
+    --dark: #000;
+    --dark-1: rgb(29, 29, 29);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--font-faimly);
+}
+
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-body {
+    flex: 1;
+}
+
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    background-color: var(--primary);
+}
+
+.intro-text-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-details-name {
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.intro-details-profession {
+    margin-top: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.intro-icon {
+    width: 250px;
+    margin-left: 200px;
+}
+
+.who-are-we {
+    height: 500px;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    background-color: rgb(241, 241, 241);
+}
+
+.section-title {
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.services-row {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    margin-top: 30px;
+}
+
+.service-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.service-card-icon {
+    width: 80px;
+}
+
+.service-card-title {
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.service-card-details {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contant-send-email-button {
+    padding: 12px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    margin-top: 30px;
+    background-color: var(--primary);
+}
+
+.footer {
+    background-color: var(--dark-1);
+    color: var(--white);
+    height: 200px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
